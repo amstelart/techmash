@@ -1,0 +1,12 @@
+// В этом файле должны быть стили для БЭМ-блока feedback, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.feedback {
+
+  $block-name:                &; // #{$block-name}__element
+
+  border: 12px solid $color-main;
+  padding: 20px 30px;
+
+}

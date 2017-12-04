@@ -1,19 +1,22 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
+// В этом файле должны быть стили для БЭМ-блока footer-nav, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-.page-footer {
+.footer-nav {
 
   $block-name:                &; // #{$block-name}__element
+  list-style: none;
+  display: flex;
+  margin-left: auto;
 
-  background-image: url(../img/footer-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top;
+  &__item {
 
-  a {
+  }
+  &__link {
     color: #fff;
+    display: block;
     text-decoration: none;
+    padding: 10px 15px;
   }
 
 }

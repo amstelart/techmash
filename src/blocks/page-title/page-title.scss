@@ -1,0 +1,13 @@
+// В этом файле должны быть стили для БЭМ-блока page-title, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-title {
+
+  $block-name:                &; // #{$block-name}__element
+
+  margin: 0 0 40px 0;
+  font-size: 30px;
+  font-weight: 700;
+
+}

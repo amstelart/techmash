@@ -29,19 +29,19 @@ $border-radius:               3px !default;
   line-height: $line-height;
   text-decoration: none;
   text-transform: none;
-  color: $text-color;
-  border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
-  background-color: $gray-lightest;
+  color: #fff;
+  border-radius: 0;
+  border: 2px solid $color-main;
+  background-color: $color-main;
   background-image: none;
   cursor: pointer;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    color: #fff;
+    background-color: darken($color-main, 10%);
+    border-color: darken($color-main, 12%);
   }
 
   &:active,
@@ -62,6 +62,18 @@ $border-radius:               3px !default;
     }
   }
 
+
+  &--rounded {
+    background: transparent;
+    border-color: #fff;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      border-color: #fff;
+      color: $color-main;
+    }
+  }
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;

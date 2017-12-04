@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока technological, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.technological {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+
+  &__card {
+    flex-basis: 25%;
+    border: 2px solid #dddddd;
+    // flex-shrink: 0;
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+
+  &__card-image {}
+  &__card-separate {
+    height: 2px;
+    width: 120px;
+    background: #dddddd;
+    margin: 15px auto;
+  }
+  &__card-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 10px;
+    padding: 0 15px;
+  }
+  &__card-caption {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 15px;
+  }
+
+}

@@ -235,3 +235,14 @@ pre {
   overflow-x: auto;
   tab-size: 2;
 }
+
+a {
+  color: $color-main;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: darken($color-main, 15%);
+    text-decoration: none;
+  }
+}
