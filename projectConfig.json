@@ -74,7 +74,9 @@
     "page-section": [],
     "page-title": [],
     "services": [],
-    "contacts": []
+    "contacts": [],
+    "recaptcha": [],
+    "feedback-top": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

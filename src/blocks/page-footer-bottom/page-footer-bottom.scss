@@ -12,6 +12,10 @@
     @include container;
     display: flex;
     justify-content: space-between;
+    @media (max-width: ($screen-md - 1)) {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
 }

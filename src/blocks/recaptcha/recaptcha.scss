@@ -1,0 +1,20 @@
+// В этом файле должны быть стили для БЭМ-блока recaptcha, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.recaptcha {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  align-items: center;
+
+  &__field {
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+  &__politic {
+
+  }
+
+}

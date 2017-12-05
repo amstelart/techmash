@@ -8,15 +8,20 @@
 
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   &__card {
+    flex-basis: 100%;
     color: #fff;
     border: 2px solid #fff;
     background: rgba(0, 0, 0, 0.6);
     text-align: center;
     padding: 30px;
-    flex-basis: 295px;
     flex-shrink: 0;
+    margin-bottom: 20px;
+    @media (min-width: $screen-lg) {
+      flex-basis: 295px;
+    }
   }
   &__num {
     font-weight: 700;

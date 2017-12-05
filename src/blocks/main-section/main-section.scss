@@ -72,6 +72,11 @@
     }
   }
 
+  &--top {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
   &--number {
     background-image: url(../img/number-bg.jpg);
     #{$block-name}__title {

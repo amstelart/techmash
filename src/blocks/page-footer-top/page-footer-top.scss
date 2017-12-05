@@ -18,6 +18,30 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 60px;
+    @media (max-width: ($screen-md - 1)) {
+      flex-direction: column;
+      .logo {
+        margin: 0 auto 20px auto;
+      }
+      .footer-info {
+        margin: auto;
+        flex-direction: column;
+        text-align: center;
+        flex-basis: auto;
+      }
+      .footer-info__item {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  @media (max-width: ($menu-desktop-width - 1)) {
+    .footer-nav {
+      display: none;
+    }
+    .footer-info {
+      margin-left: auto;
+    }
   }
 
 }
