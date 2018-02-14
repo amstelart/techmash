@@ -10,11 +10,34 @@
 
   <div class="page-header__inner">
 
-    <a href="/" class="logo">
-      <img src="img/logo.svg" alt="logo">
+    <a href="index.html" class="logo">
+      <div class="logo__title">Центр технологической оснастки</div>
+      <div class="logo__caption">Точная механика - наша продукция</div>
     </a>
 
+    <div class="header-info">
+      <div class="header-info__item header-info__item--text">
+        Российский производитель
+        технологической оснастки
+        и точной механики
+      </div>
+      <div class="header-info__item header-info__item--phone">
+        <svg class="icon">
+          <use xlink:href="img/sprite-svg.svg#icon-phone"></use>
+        </svg>
+        +7(495) 966 28 15
+      </div>
+      <div class="header-info__item header-info__item--btn">
+        <button class="btn btn--rounded-main" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+      </div>
+    </div>
+
+    <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
+
+  </div>
+  <div class="nav-section">
     <nav id="main-nav" class="main-nav" role="navigation">
+      <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
       <ul class="main-nav__list">
         <li class="main-nav__item">
           <a href="page-uslugi.html" class="main-nav__link">
@@ -26,9 +49,14 @@
             Наши работы
           </a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--active">
           <a href="page-oplata.html" class="main-nav__link">
             Оплата и доставка
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="page-vacancy.html" class="main-nav__link">
+            Вакансии
           </a>
         </li>
         <li class="main-nav__item">
@@ -36,22 +64,8 @@
             Контакты
           </a>
         </li>
-        <li class="main-nav__item">
-          <a href="#" class="main-nav__link">
-            Вакансии
-          </a>
-        </li>
       </ul>
     </nav>
-
-    <div class="header-info">
-      <div class="header-info__item">+7(495) 966-28-15</div>
-      <div class="header-info__item"><a href="#">Схема проезда</a></div>
-    </div>
-
-    <button class="btn btn--call" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
-    <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
-
   </div>
 
 </header>

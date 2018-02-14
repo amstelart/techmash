@@ -17,41 +17,50 @@ $toggler-part-bg-color:       #000 !default;
 
 $transition-time:             0.3s !default;
 
+.nav-section {
+  background: $color-main;
+}
+
 .main-nav {
 
   $block-name:                &; // #{$block-name}__element
 
+  @include container;
   position: relative;
   z-index: 10;
+  padding: 15px 0;
 
   @media (max-width: ($menu-desktop-width - 1)) {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 93px;
-    background: #f9f9f9;
+    // position: absolute;
+    // width: 100%;
+    // left: 0;
+    // top: 93px;
+    // background: #f9f9f9;
   }
 
   // первый уровень
   &__list {
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 
     // мобильный вид списка
     @media (max-width: ($menu-desktop-width - 1)) {
+
+      padding-left: 0;
 
       // открытие/закрытие меню только в случае работающего JS
 
       .js & {
         overflow: hidden;
         max-height: 0;
-        transition: max-height 0.2s;
+        transition: all 0.2s;
       }
 
       .js #{$block-name}--open & {
         max-height: 100vh;
-        transition: max-height 0.6s;
+        margin-top: 20px;
+        transition: all 0.6s;
       }
     }
 
@@ -68,7 +77,7 @@ $transition-time:             0.3s !default;
     &--active {
 
       & > #{$block-name}__link {
-        color: #000;
+        color: #ffbe4c;
       }
     }
   }
@@ -77,13 +86,16 @@ $transition-time:             0.3s !default;
     display: block;
     padding: 0.5em 0.9em;
     color: inherit;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
     text-decoration: none;
-    background-color: #fff;
 
     &:hover,
     &:focus {
       text-decoration: none;
-      color: $color-main;
+      color: #94cdff;
       background-color: transparent;
     }
 
@@ -160,7 +172,15 @@ $transition-time:             0.3s !default;
     padding: 0;
     background: none;
     border: none;
-    margin-left: 20px;
+    margin-left: 10px;
+
+    &:before {
+      content: "МЕНЮ";
+      position: absolute;
+      color: #fff;
+      font-size: 18px;
+      left: 40px;
+    }
 
     .no-js & {
       display: none;

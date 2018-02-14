@@ -7,16 +7,26 @@
   $block-name:                &; // #{$block-name}__element
   list-style: none;
   display: flex;
-  margin-left: auto;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #65839d;
 
   &__item {
-
+    margin: 20px 20px 0 0;
   }
+
   &__link {
-    color: #fff;
-    display: block;
+    color: #65839d;
     text-decoration: none;
-    padding: 10px 15px;
+
+    &:hover,
+    &:focus {
+      color: #ffbe4c;
+    }
   }
 
+  @media (max-width: ($screen-md - 1)) {
+    display: none;
+  }
 }

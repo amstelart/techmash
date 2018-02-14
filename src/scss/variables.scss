@@ -21,14 +21,14 @@ $color-warning:               hsl(35, 84%, 62%);
 
 // Семантические цвета
 
-$text-color:                  $gray-darkest;
+$text-color:                  #11334f;
 $text-color--muted:           $gray;
 $body-bg:                     #fff;
 
 $link-color:                  $color-main;
 $link-color--hover:           darken($color-main, 15%);
 
-$border-color:                $gray-light;
+$border-color:                #1375cb;
 
 
 
@@ -59,7 +59,7 @@ $screen-sm:                   480px;
 $screen-md:                   768px;
 $screen-lg:                   992px;
 $screen-xl:                   1200px;
-$screen-xxl:                  1200px;
+$screen-xxl:                  1310px;
 
 $container-sm:                100%;
 $container-md:                100%;
@@ -72,7 +72,7 @@ $container-xxl:               $screen-xxl - 30;
 // Модульная сетка
 
 $grid-columns:                12;
-$grid-gutter-width:           30px;
+$grid-gutter-width:           20px;
 
 
 
@@ -88,6 +88,6 @@ $shadow:                      0 4px 2px -2px rgba(0, 0, 0, 0.3);
 
 $menu-desktop-width:          $screen-xl;
 $toggler-part-height:         3px;
-$toggler-part-bg-color:       #000;
+$toggler-part-bg-color:       #fff;
 
 $z-index-modal:               100;

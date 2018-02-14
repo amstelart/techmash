@@ -12,9 +12,10 @@
   &__field {
     margin-right: 30px;
     flex-shrink: 0;
+    @media (max-width: ($screen-md - 1)) {
+      flex-shrink: 1;
+    }
   }
-  &__politic {
-
-  }
+  &__politic {}
 
 }

@@ -8,6 +8,10 @@
   font-size: 16px;
   padding: 2.7em 0;
 
+  @media (max-width: ($screen-md - 1)) {
+    padding: 1.5em 0;
+  }
+
   &__inner {
     @include container;
   }
@@ -18,15 +22,15 @@
 
   &__title {
     text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 600;
+    color: #11334f;
     font-size: 30px;
     line-height: 1.2;
     margin: 10px 0;
   }
 
   &__title-caption {
-    color: #6c6c6c;
+    color: #9fa6ad;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -73,12 +77,13 @@
   }
 
   &--top {
-    padding-top: 0;
-    padding-bottom: 60px;
+    padding: 0;
   }
 
   &--number {
     background-image: url(../img/number-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     #{$block-name}__title {
       color: #fff;
     }
@@ -89,6 +94,31 @@
 
   &--work {
     background: #f3f3f3;
+
+    #{$block-name}__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #{$block-name}__title {
+      text-align: left;
+    }
+
+    @media (max-width: ($screen-md - 1)) {
+      #{$block-name}__header {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &--partners {
+    padding-bottom: 0;
+  }
+
+  &--feedback {
+    padding: 0;
+    position: relative;
   }
 
 }

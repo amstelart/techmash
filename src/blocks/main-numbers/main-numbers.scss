@@ -13,16 +13,31 @@
   &__card {
     flex-basis: 100%;
     color: #fff;
-    border: 2px solid #fff;
-    background: rgba(0, 0, 0, 0.6);
+    // border: 2px solid #fff;
+    background: rgba(19, 117, 203, 0.6);
     text-align: center;
     padding: 30px;
     flex-shrink: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     @media (min-width: $screen-lg) {
-      flex-basis: 295px;
+      flex-basis: 445px;
+    }
+    @media (min-width: $screen-xl) {
+      flex-basis: 345px;
+    }
+
+    &:hover,
+    &:focus {
+      background: rgba(19, 117, 203, 1);
+      cursor: pointer;
     }
   }
+
+  &__icon {
+    fill: #ffbe4c;
+    margin-bottom: 15px;
+  }
+
   &__num {
     font-weight: 700;
     font-size: 40px;

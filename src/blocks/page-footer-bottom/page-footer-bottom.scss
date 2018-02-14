@@ -7,6 +7,17 @@
   $block-name:                &; // #{$block-name}__element
   background: rgba(0, 0, 0, 0.6);
   color: #fff;
+  font-size: 14px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 
   &__inner {
     @include container;

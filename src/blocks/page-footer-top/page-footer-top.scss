@@ -5,43 +5,42 @@
 .page-footer-top {
 
   $block-name:                &; // #{$block-name}__element
+  @include container;
+  padding-top: 90px;
+  padding-bottom: 40px;
   color: #fff;
   font-size: 16px;
 
-  .logo {
-    margin-right: 30px;
-  }
-
   &__inner {
-    @include container;
-    display: flex;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 60px;
-    @media (max-width: ($screen-md - 1)) {
-      flex-direction: column;
-      .logo {
-        margin: 0 auto 20px auto;
-      }
-      .footer-info {
-        margin: auto;
-        flex-direction: column;
-        text-align: center;
-        flex-basis: auto;
-      }
-      .footer-info__item {
-        margin-bottom: 15px;
-      }
-    }
+    @include row;
   }
 
-  @media (max-width: ($menu-desktop-width - 1)) {
-    .footer-nav {
-      display: none;
-    }
-    .footer-info {
-      margin-left: auto;
-    }
+  &__l-part {
+    @include col();
+    @include col(lg, 7);
   }
 
+  &__r-part {
+    @include col();
+    @include col(lg, 5);
+  }
+
+  .logo {
+    margin-bottom: 30px;
+  }
+
+  .logo__caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #9b9b9b;
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    padding-bottom: 20px;
+
+    .logo {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
 }

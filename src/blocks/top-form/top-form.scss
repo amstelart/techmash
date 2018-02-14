@@ -1,0 +1,70 @@
+// В этом файле должны быть стили для БЭМ-блока top-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.top-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 0.7em 0;
+  }
+
+  &__field {
+
+    max-width: 400px;
+
+    .btn {
+      width: 100%;
+      background: #d0a049;
+      border-color: #d0a049;
+      color: #fff;
+      text-transform: uppercase;
+
+      &:hover,
+      &:focus {
+        background-color: darken(#d0a049, 10%);
+        border-color: darken(#d0a049, 10%);
+      }
+    }
+
+    .field-text__input {
+      border-color: #fff;
+      background: transparent;
+      color: #fff;
+
+      &::placeholder {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+
+    .field-actions__text {
+      font-size: 14px;
+      color: #7a828a;
+      line-height: 1.6;
+    }
+
+    .field-file__input {
+    }
+
+    .field-file__name-text {
+      background: transparent;
+      border: none;
+      color: #7a828a;
+
+      &:before {
+        background: transparent;
+        color: #fff;
+        text-decoration: underline;
+        padding: 0.5em 1em 0.5em 0;
+        border: none;
+      }
+    }
+  }
+}

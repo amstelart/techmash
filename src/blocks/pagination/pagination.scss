@@ -15,7 +15,7 @@ $border-color:                hsl(0, 0%, 60%) !default;
   display: flex;
   flex-wrap: wrap;
   margin-top: $line-height;
-  margin-bottom: $line-height;
+  margin-bottom: 0;
 
   &__item {
     display: block;

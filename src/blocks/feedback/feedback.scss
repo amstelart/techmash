@@ -8,6 +8,10 @@
 
   border: 12px solid $color-main;
   padding: 20px 90px;
+  position: relative;
+  bottom: -60px;
+  background: #fff;
+
   @media (max-width: ($screen-lg - 1)) {
     padding: 20px 30px;
     .recaptcha {
@@ -24,7 +28,7 @@
   }
   &__title {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
     margin-bottom: 20px;
   }

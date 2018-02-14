@@ -13,7 +13,7 @@
 
   &__card {
     flex-basis: 100%;
-    border: 2px solid #dddddd;
+    border: 2px solid $color-main;
     padding-bottom: 20px;
     text-decoration: none;
     color: inherit;
@@ -21,9 +21,10 @@
     margin-bottom: 25px;
     &:hover,
     &:focus {
-      border-color: $color-main;
+      border-color: #ffbe4c;
+      color: inherit;
       #{$block-name}__card-separate {
-        background: $color-main;
+        background: #ffbe4c;
       }
     }
     margin-left: 15px;
@@ -37,11 +38,16 @@
     }
   }
 
-  &__card-image {}
+  &__card-image {
+    img {
+      width: 100%;
+    }
+  }
+
   &__card-separate {
     height: 2px;
     width: 120px;
-    background: #dddddd;
+    background: $color-main;
     transition: all 0.3s;
     margin: 15px auto;
   }

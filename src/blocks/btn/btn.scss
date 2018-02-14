@@ -63,7 +63,6 @@ $border-radius:               3px !default;
     }
   }
 
-
   &--rounded {
     background: transparent;
     border-color: #fff;
@@ -75,6 +74,42 @@ $border-radius:               3px !default;
       color: $color-main;
     }
   }
+
+  &--rounded-main {
+    background: transparent;
+    color: $text-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border-color: $color-main;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      border-color: #fff;
+      color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+  &--rounded-black {
+    background: transparent;
+    color: $text-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    border-color: $text-color;
+
+    &:hover,
+    &:focus {
+      background: #fff;
+      border-color: #fff;
+      color: $color-main;
+      border-color: $color-main;
+    }
+  }
+
+
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;

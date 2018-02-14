@@ -16,16 +16,12 @@
 
   &__col {
     &--contacts {
-      @include make-col(4);
-      @media (max-width: ($screen-xl - 1)) {
-        @include make-col(12);
-      }
+      @include col();
+      @include col(xl, 5);
     }
     &--map {
-      @include make-col(8);
-      @media (max-width: ($screen-xl - 1)) {
-        @include make-col(12);
-      }
+      @include col();
+      @include col(xl, 7);
     }
   }
 

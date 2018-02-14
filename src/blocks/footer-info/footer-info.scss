@@ -6,8 +6,57 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  font-size: 16px;
+  line-height: 24px;
   display: flex;
-  justify-content: space-between;
-  flex-basis: 340px;
 
+  &__item {
+
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+
+    &--text {
+      font-size: 12px;
+      line-height: 1.6;
+      color: #9b9b9b;
+      text-transform: uppercase;
+      max-width: 195px;
+    }
+
+    &--phone {
+      font-size: 16px;
+      white-space: nowrap;
+      color: #65839d;
+
+      .icon {
+        width: 26px;
+        height: 26px;
+        fill: #65839d;
+        margin-right: 10px;
+      }
+    }
+
+    &--btn {
+      margin-right: 0;
+      .btn--rounded-main {
+        color: #fff;
+
+        &:hover,
+        &:focus {
+          background: transparent;
+          color: $color-main;
+        }
+      }
+    }
+  }
+
+  @media (max-width: ($screen-md - 1)) {
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+      margin: 20px 0 0 0;
+    }
+  }
 }
