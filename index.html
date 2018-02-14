@@ -2,7 +2,7 @@
 <html class="no-js  page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Центр технологической оснастки</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -35,7 +35,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/manifest.json">
+<link rel="manifest" href="/img/site.webmanifest">
 <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
 <link rel="shortcut icon" href="/img/favicon.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
@@ -48,9 +48,30 @@
       <header class="page-header" role="banner">
         <div class="page-header__inner">
           <a href="index.html" class="logo">
-            <img src="img/logo.svg" alt="logo">
+            <div class="logo__title">Центр технологической оснастки</div>
+            <div class="logo__caption">Точная механика - наша продукция</div>
           </a>
+          <div class="header-info">
+            <div class="header-info__item header-info__item--text">
+              Российский производитель
+              технологической оснастки
+              и точной механики
+            </div>
+            <div class="header-info__item header-info__item--phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite-svg.svg#icon-phone"/>
+              </svg>
+              +7(495) 966 28 15
+            </div>
+            <div class="header-info__item header-info__item--btn">
+              <button class="btn btn--rounded-main" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+            </div>
+          </div>
+          <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
+        </div>
+        <div class="nav-section">
           <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="page-uslugi.html" class="main-nav__link">
@@ -62,9 +83,14 @@
                   Наши работы
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a href="page-oplata.html" class="main-nav__link">
                   Оплата и доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-vacancy.html" class="main-nav__link">
+                  Вакансии
                 </a>
               </li>
               <li class="main-nav__item">
@@ -72,166 +98,176 @@
                   Контакты
                 </a>
               </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Вакансии
-                </a>
-              </li>
             </ul>
           </nav>
-          <div class="header-info">
-            <div class="header-info__item">+7(495) 966-28-15</div>
-            <div class="header-info__item"><a href="#">Схема проезда</a></div>
-          </div>
-          <button class="btn btn--call" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
-          <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
         </div>
       </header>
-      <section class="main-section main-section--top">
-        <div class="main-section__inner">
-          <div class="main-services">
-            <div class="main-services-card" style="background-image: url(img/main-services-card-image-01.jpg);">
-              <div class="main-services-card__content">
-                <div class="main-services-card__title">Изготовление штамповой оснастки</div>
-                <div class="main-services-card__separate"></div>
-                <div class="main-services-card__text">Холодная штамповка и литье изделий из черных и цветных металлов.
-                  Разрабатываем конструкторскую документацию</div>
-                <button class="btn btn--rounded">Оставить заявку</button>
+      <div class="top">
+        <div class="top__media" style="background-image: url(img/top-media-image-01.jpg);">
+          <div class="top__media-inner">
+            <form action="" class="top-form">
+              <div class="top-form__title">Оставить заявку</div>
+              <label class="field-text top-form__field">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Ваше имя" id="">
+                </span>
+              </label>
+              <label class="field-text top-form__field">
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" placeholder="Ваш телефон" id="">
+                </span>
+              </label>
+              <div class="field-file top-form__field">
+                <label class="field-file__input-wrap">
+                  <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
+                  <div class="field-file__name-text" data-button-text="Прикрепить файл">Ничего не выбрано</div>
+                </label>
               </div>
-            </div>
-            <div class="main-services-card" style="background-image: url(img/main-services-card-image-02.jpg);">
-              <div class="main-services-card__content">
-                <div class="main-services-card__title">Изготовление пресс-форм</div>
-                <div class="main-services-card__separate"></div>
-                <div class="main-services-card__text">Для литья пластмасс и формовки резино-технических изделий
-                  Разрабатываем конструкторскую документацию</div>
-                <button class="btn btn--rounded">Оставить заявку</button>
+              <div class="field-actions top-form__field">
+                <button class="btn">Оставить заявку</button>
+                <div class="field-actions__text">Оставляя заявку вы соглашаетесь на обрботку персональных данных. Политика конфиденциальности</div>
               </div>
-            </div>
-            <div class="main-services-card" style="background-image: url(img/main-services-card-image-03.jpg);">
-              <div class="main-services-card__content">
-                <div class="main-services-card__title">Изготовление нестандартного оборудования, отдельных механизмов и узлов</div>
-                <div class="main-services-card__separate"></div>
-                <div class="main-services-card__text">А также отдельных видов механизмов и узлов</div>
-                <button class="btn btn--rounded">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+        <div class="top__thumbs">
+          <div class="top__thumbs-inner">
+            <div class="thumbs-list">
+              <div class="thumbs-list__item">
+                <a href="#" class="thumbs-list__link">
+                  <svg class="thumbs-list__icon" width="28" height="28">
+                    <use xlink:href="img/sprite-svg.svg#thumbs-icon-01"/>
+                  </svg>
+                  <div class="thumbs-list__title">Изготовление пресс-форм</div>
+                  <div class="thumbs-list__caption">Для литья пластмасс и формовки резино-технических изделий</div>
+                </a>
               </div>
-            </div>
-            <div class="main-services-card" style="background-image: url(img/main-services-card-image-04.jpg);">
-              <div class="main-services-card__content">
-                <div class="main-services-card__title">Изготовление металло-модельной и кокильной технологической оснастки</div>
-                <div class="main-services-card__separate"></div>
-                <div class="main-services-card__text">Холодная штамповка и литье изделий из черных и цветных металлов</div>
-                <button class="btn btn--rounded">Оставить заявку</button>
+              <div class="thumbs-list__item">
+                <a href="#" class="thumbs-list__link">
+                  <svg class="thumbs-list__icon" width="32" height="32">
+                    <use xlink:href="img/sprite-svg.svg#thumbs-icon-02"/>
+                  </svg>
+                  <div class="thumbs-list__title">Изготовление штамповой оснастки</div>
+                  <div class="thumbs-list__caption">Проектирование и изготовление гибочных и вырубных штампов по металлу различной сложности</div>
+                </a>
+              </div>
+              <div class="thumbs-list__item thumbs-list__item--active">
+                <a href="#" class="thumbs-list__link">
+                  <svg class="thumbs-list__icon" width="30" height="30">
+                    <use xlink:href="img/sprite-svg.svg#thumbs-icon-03"/>
+                  </svg>
+                  <div class="thumbs-list__title">Изготовление нестандартного оборудования</div>
+                  <div class="thumbs-list__caption">Изготовление нестандартного оборудования, точной механики и деталей машин по чертежам заказчика</div>
+                </a>
+              </div>
+              <div class="thumbs-list__item">
+                <a href="#" class="thumbs-list__link">
+                  <svg class="thumbs-list__icon" width="33" height="33">
+                    <use xlink:href="img/sprite-svg.svg#thumbs-icon-04"/>
+                  </svg>
+                  <div class="thumbs-list__title">Изготовление оснастки для литья металлов</div>
+                  <div class="thumbs-list__caption">Проектирование и изготовление металло-модельной и кокильной оснастки для литья черных и цветных металлов</div>
+                </a>
               </div>
             </div>
           </div>
-          <div class="feedback-top">
-            <div class="feedback-top__header">
-              <div class="feedback-top__title">У вас есть чертеж или ТЗ?
-                Пришлите его нам на оценку!</div>
-                <div class="feedback-top__separate"></div>
-              <div class="feedback-top__title-caption">Вышлем оценку работ в течение дня</div>
-            </div>
-            <form action="" class="feedback-top__form">
-              <div class="fields-group">
-                <label class="field-text feedback-top__field">
-                  <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="Имя" id="">
-                  </span>
-                </label>
-                <label class="field-text feedback-top__field">
-                  <span class="field-text__input-wrap">
-                    <input class="field-text__input" type="text" placeholder="Телефон" id="">
-                  </span>
-                </label>
+        </div>
+      </div>
+      <section class="main-section main-section--work">
+        <div class="main-section__inner">
+          <div class="main-section__header">
+            <div class="main-section__title">Осуществляем работы</div>
+            <a href="#" class="btn btn--rounded-black">Все работы</a>
+          </div>
+          <div class="main-work">
+            <a href="#" class="main-work__card">
+              <div class="main-work__image">
+                <img src="img/main-work-image-01.jpg" alt="">
               </div>
-              <div class="fields-group">
-                <div class="field-text feedback-top__field">
-                  <button class="btn">Прикрепить файл</button>
-                </div>
-                <div class="field-actions feedback-top__field">
-                  <button class="btn">Отправить</button>
-                </div>
+              <div class="main-work__caption">
+                Изготовление, ремонт и модернизация нестандартного оборудования
               </div>
-              <div class="recaptcha">
-                <div class="recaptcha__field">
-                  <img src="img/recaptcha-placeholder.jpg" alt="">
-                </div>
-                <div class="recaptcha__politic">
-                  Оставляя заявку, вы соглашаетесь
-                  на обработку персональных данных
-                </div>
+            </a>
+            <a href="#" class="main-work__card">
+              <div class="main-work__image">
+                <img src="img/main-work-image-02.jpg" alt="">
               </div>
-            </form>
+              <div class="main-work__caption">
+                Изготовление деталей и узлов механизмов и машин
+              </div>
+            </a>
+            <a href="#" class="main-work__card">
+              <div class="main-work__image">
+                <img src="img/main-work-image-03.jpg" alt="">
+              </div>
+              <div class="main-work__caption">
+                Работы по ремонту и восстановлению деталей
+              </div>
+            </a>
+            <a href="#" class="main-work__card">
+              <div class="main-work__image">
+                <img src="img/main-work-image-04.jpg" alt="">
+              </div>
+              <div class="main-work__caption">
+                Изготовление вал-шестерен и зубчатых колес
+              </div>
+            </a>
           </div>
         </div>
       </section>
       <section class="main-section main-section--number">
         <div class="main-section__inner">
           <div class="main-section__header">
-            <div class="main-section__title">Техномаш</div>
+            <div class="main-section__title">Статистика нашей работы на 30.12.2017</div>
           </div>
           <div class="main-numbers">
             <div class="main-numbers__card">
-              <div class="main-numbers__num">150</div>
+              <svg class="main-numbers__icon" width="40" height="40">
+                <use xlink:href="img/sprite-svg.svg#icon-num-01"/>
+              </svg>
+              <div class="main-numbers__num">19</div>
               <div class="main-numbers__separate"></div>
               <div class="main-numbers__text">постоянных клиентов</div>
             </div>
             <div class="main-numbers__card">
-              <div class="main-numbers__num">14 335</div>
+              <svg class="main-numbers__icon" width="40" height="40">
+                <use xlink:href="img/sprite-svg.svg#icon-num-02"/>
+              </svg>
+              <div class="main-numbers__num">1500м<sup>2</sup></div>
               <div class="main-numbers__separate"></div>
               <div class="main-numbers__text">площадь производства</div>
             </div>
             <div class="main-numbers__card">
-              <div class="main-numbers__num">523 412</div>
+              <svg class="main-numbers__icon" width="40" height="40">
+                <use xlink:href="img/sprite-svg.svg#icon-num-03"/>
+              </svg>
+              <div class="main-numbers__num">47</div>
               <div class="main-numbers__separate"></div>
               <div class="main-numbers__text">единиц продукции произведено</div>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-section main-section--work">
-        <div class="main-section__inner">
-          <div class="main-section__header">
-            <div class="main-section__title">Осуществляем работы</div>
-          </div>
-          <div class="main-work">
-            <div class="main-work__card">
-              <div class="main-work__image">
-                <img src="img/main-work-image-01.jpg" alt="">
-              </div>
-              <div class="main-work__caption">
-                Изготовление, ремонт
-                и модернизация
-                нестандартного оборудования
-              </div>
+            <div class="main-numbers__card">
+              <svg class="main-numbers__icon" width="40" height="40">
+                <use xlink:href="img/sprite-svg.svg#icon-num-04"/>
+              </svg>
+              <div class="main-numbers__num">532649</div>
+              <div class="main-numbers__separate"></div>
+              <div class="main-numbers__text">постоянных клиентов</div>
             </div>
-            <div class="main-work__card">
-              <div class="main-work__image">
-                <img src="img/main-work-image-02.jpg" alt="">
-              </div>
-              <div class="main-work__caption">
-                Изготовление деталей
-                и узлов механизмов и машин
-              </div>
+            <div class="main-numbers__card">
+              <svg class="main-numbers__icon" width="40" height="40">
+                <use xlink:href="img/sprite-svg.svg#icon-num-05"/>
+              </svg>
+              <div class="main-numbers__num">94,58%</div>
+              <div class="main-numbers__separate"></div>
+              <div class="main-numbers__text">площадь производства</div>
             </div>
-            <div class="main-work__card">
-              <div class="main-work__image">
-                <img src="img/main-work-image-03.jpg" alt="">
-              </div>
-              <div class="main-work__caption">
-                Работы по ремонту
-                и восстановлению деталей
-              </div>
-            </div>
-            <div class="main-work__card">
-              <div class="main-work__image">
-                <img src="img/main-work-image-04.jpg" alt="">
-              </div>
-              <div class="main-work__caption">
-                Изготовление вал-шестерен
-                и зубчатых колес
-              </div>
+            <div class="main-numbers__card">
+              <svg class="main-numbers__icon" width="40" height="40">
+                <use xlink:href="img/sprite-svg.svg#icon-num-06"/>
+              </svg>
+              <div class="main-numbers__num">98,79%</div>
+              <div class="main-numbers__separate"></div>
+              <div class="main-numbers__text">единиц продукции произведено</div>
             </div>
           </div>
         </div>
@@ -240,7 +276,7 @@
         <div class="main-section__inner">
           <div class="main-section__header">
             <div class="main-section__title">Технологическое оснащение</div>
-            <div class="main-section__title-caption">58 видов производств, 323 станков</div>
+            <div class="main-section__title-caption">323 станков</div>
           </div>
           <div class="technological">
             <a href="#" class="technological__card">
@@ -278,7 +314,7 @@
           </div>
         </div>
       </section>
-      <section class="main-section main-section--partners">
+      <!-- <section class="main-section main-section--partners">
         <div class="main-section__inner">
           <div class="main-section__header">
             <div class="main-section__title">Компании, которые уже работают с нами</div>
@@ -298,7 +334,7 @@
             </a>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="main-section main-section--feedback">
         <div class="main-section__inner">
           <div class="feedback">
@@ -327,8 +363,7 @@
                   <img src="img/recaptcha-placeholder.jpg" alt="">
                 </div>
                 <div class="recaptcha__politic">
-                  Оставляя заявку, вы соглашаетесь
-                  на обработку персональных данных
+                  Оставляя заявку, вы соглашаетесь на обработку персональных данных
                 </div>
               </div>
             </form>
@@ -344,28 +379,36 @@
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer-top">
           <div class="page-footer-top__inner">
-            <a href="index.html" class="logo">
-              <img src="img/logo.svg" alt="logo">
-            </a>
-            <div class="footer-info">
-              <div class="footer-info__item">
-                +7(495) 966-28-15
-              </div>
-              <div class="footer-info__item">
-                <a href="#">Схема проезда</a>
+            <div class="page-footer-top__l-part">
+              <a href="index.html" class="logo">
+                <div class="logo__title">Центр технологической оснастки</div>
+                <div class="logo__caption">Российский производитель технологической оснастки и точной механики</div>
+              </a>
+              <ul class="footer-nav">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Услуги</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши работы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата и доставка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="page-footer-top__r-part">
+              <div class="footer-info">
+                <div class="footer-info__item footer-info__item--phone">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#icon-phone"/>
+                  </svg>
+                  +7(495) 966 28 15
+                </div>
+                <div class="footer-info__item footer-info__item--btn">
+                  <button class="btn btn--rounded-main" type="button" data-toggle="modal" data-target="#modal-call">Заказать обратный звонок</button>
+                </div>
               </div>
             </div>
-            <ul class="footer-nav">
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Услуги</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши работы</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата и доставка</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-            </ul>
           </div>
         </div>
         <div class="page-footer-bottom">
           <div class="page-footer-bottom__inner">
-            <p class="copyright">ООО "Техмаш"</p>
+            <p class="copyright">ООО «Центр технологической оснастки» 2018</p>
             <p class="copyright">Разработка <a href="#">Showbiz Studio</a></p>
           </div>
         </div>

@@ -35,7 +35,7 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-<link rel="manifest" href="/img/manifest.json">
+<link rel="manifest" href="/img/site.webmanifest">
 <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ffffff">
 <link rel="shortcut icon" href="/img/favicon.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
@@ -48,9 +48,30 @@
       <header class="page-header" role="banner">
         <div class="page-header__inner">
           <a href="index.html" class="logo">
-            <img src="img/logo.svg" alt="logo">
+            <div class="logo__title">Центр технологической оснастки</div>
+            <div class="logo__caption">Точная механика - наша продукция</div>
           </a>
+          <div class="header-info">
+            <div class="header-info__item header-info__item--text">
+              Российский производитель
+              технологической оснастки
+              и точной механики
+            </div>
+            <div class="header-info__item header-info__item--phone">
+              <svg class="icon">
+                <use xlink:href="img/sprite-svg.svg#icon-phone"/>
+              </svg>
+              +7(495) 966 28 15
+            </div>
+            <div class="header-info__item header-info__item--btn">
+              <button class="btn btn--rounded-main" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
+            </div>
+          </div>
+          <!-- <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button> -->
+        </div>
+        <div class="nav-section">
           <nav id="main-nav" class="main-nav" role="navigation">
+            <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
             <ul class="main-nav__list">
               <li class="main-nav__item">
                 <a href="page-uslugi.html" class="main-nav__link">
@@ -62,9 +83,14 @@
                   Наши работы
                 </a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--active">
                 <a href="page-oplata.html" class="main-nav__link">
                   Оплата и доставка
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="page-vacancy.html" class="main-nav__link">
+                  Вакансии
                 </a>
               </li>
               <li class="main-nav__item">
@@ -72,19 +98,8 @@
                   Контакты
                 </a>
               </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">
-                  Вакансии
-                </a>
-              </li>
             </ul>
           </nav>
-          <div class="header-info">
-            <div class="header-info__item">+7(495) 966-28-15</div>
-            <div class="header-info__item"><a href="#">Схема проезда</a></div>
-          </div>
-          <button class="btn btn--call" type="button" data-toggle="modal" data-target="#modal-call">Заказать звонок</button>
-          <button id="main-nav-toggler" class="main-nav__toggler  burger"><span></span></button>
         </div>
       </header>
       <div class="page-section">
@@ -94,14 +109,19 @@
             <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Услуги</a></li>
           </ul>
           <h1 class="page-title">Оплата и доставка</h1>
-          <p>Компания «Техноресурс» осуществляет изготовление штампов  и пресс-форм по чертежам заказчика на современном оборудовании.</p>
-          <p>Качество наших изделий во многом зависит от правильно изготовленной штамповой оснастки – доверьте свой выбор профессионалам ООО «Техноресурс», заказывайте формы и вырубные штампы на нашем производстве.</p>
-          <p>Штамповая оснастка разрабатывается профессионалами с большим опытом работы. Мы учитываем пожелания наших клиентов и знаем все тонкости технологического процесса при изготовлении штампов и пресс-форм.
-            делать работу качественно и оперативно. Техноресурс проектирует и изготавливает сложные вырубные штампы (штанцформ, вырубной остнастки, высекальной оснастки, высекальных штампов).</p>
-          <p>Компания «Техноресурс» осуществляет изготовление штампов и пресс-форм по чертежам заказчика на современном оборудовании.</p>
-          <p>Качество наших изделий во многом зависит от правильно изготовленной штамповой оснастки – доверьте свой выбор профессионалам ООО «Техноресурс», заказывайте формы и вырубные штампы на нашем производстве.</p>
-          <p>Штамповая оснастка разрабатывается профессионалами с большим опытом работы. Мы учитываем пожелания наших клиентов и знаем все тонкости технологического процесса при изготовлении штампов и пресс-форм.</p>
-          <p>Изготовление вырубных и гибочных штампов по металлу из высококачественных материалов, на полуавтоматизированном и автоматизированном оборудовании – позволяет исключать брак и делать работу качественно и оперативно. Техноресурс проектирует и изготавливает сложные вырубные штампы (штанцформ, вырубной остнастки, высекальной оснастки, высекальных штампов).</p>
+          <h4>Условия оплаты</h4>
+          <ul class="list">
+            <li>Стандартный способ оплаты: 50% предоплата, 50% — после извещения о готовности к отгрузке</li>
+            <li>Договора заключаем по требованию заказчика</li>
+            <li>Полный комплект документов, прописанный в договоре, предоставляем</li>
+            <li>Работаем с НДС</li>
+          </ul>
+          <h4>Условия доставки</h4>
+          <ul class="list">
+            <li>Доставка во все регионы РФ и Крым</li>
+            <li>Работаем со всеми ТК. Предпочтительные транспортные компании — «Деловые линии», «Автотрейдинг», «ПЭК». Возможна     экспресс-доставка личным транспортом предприятия или курьерской службой</li>
+            <li>Возможен самовывоз для заказов из Курска и Курской области, а также для тех покупателей, кому удобно забрать у нас на производстве</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -145,28 +165,36 @@
       <footer class="page-footer" role="contentinfo">
         <div class="page-footer-top">
           <div class="page-footer-top__inner">
-            <a href="index.html" class="logo">
-              <img src="img/logo.svg" alt="logo">
-            </a>
-            <div class="footer-info">
-              <div class="footer-info__item">
-                +7(495) 966-28-15
-              </div>
-              <div class="footer-info__item">
-                <a href="#">Схема проезда</a>
+            <div class="page-footer-top__l-part">
+              <a href="index.html" class="logo">
+                <div class="logo__title">Центр технологической оснастки</div>
+                <div class="logo__caption">Российский производитель технологической оснастки и точной механики</div>
+              </a>
+              <ul class="footer-nav">
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Услуги</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши работы</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата и доставка</a></li>
+                <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="page-footer-top__r-part">
+              <div class="footer-info">
+                <div class="footer-info__item footer-info__item--phone">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite-svg.svg#icon-phone"/>
+                  </svg>
+                  +7(495) 966 28 15
+                </div>
+                <div class="footer-info__item footer-info__item--btn">
+                  <button class="btn btn--rounded-main" type="button" data-toggle="modal" data-target="#modal-call">Заказать обратный звонок</button>
+                </div>
               </div>
             </div>
-            <ul class="footer-nav">
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Услуги</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши работы</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Оплата и доставка</a></li>
-              <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-            </ul>
           </div>
         </div>
         <div class="page-footer-bottom">
           <div class="page-footer-bottom__inner">
-            <p class="copyright">ООО "Техмаш"</p>
+            <p class="copyright">ООО «Центр технологической оснастки» 2018</p>
             <p class="copyright">Разработка <a href="#">Showbiz Studio</a></p>
           </div>
         </div>
