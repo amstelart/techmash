@@ -11,14 +11,39 @@
   &__card {
     @include col();
     @include col(md, 6);
+  }
+
+  &__link {
     display: flex;
     margin-bottom: 20px;
     transition: all 0.4s;
+    position: relative;
+    transition: all 0.4s;
+
+    &:before {
+      content: "";
+      transition: all 0.4s;
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      top: 0px;
+      right: 0px;
+      border: 4px solid #ffbe4c;
+      opacity: 0;
+    }
 
     &:hover,
     &:focus {
       color: #fff;
       text-decoration: underline;
+
+      &:before {
+        opacity: 1;
+        left: 10px;
+        bottom: 10px;
+        top: 10px;
+        right: 10px;
+      }
 
       #{$block-name}__caption {
         background: $color-main;
