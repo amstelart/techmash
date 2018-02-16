@@ -39,9 +39,10 @@
   }
 
   &__thumbs {
-    flex-basis: 44.5%;
+    // flex-basis: 44.5%;
+    flex-grow: 1;
     background: #075090;
-    flex-shrink: 0;
+    // flex-shrink: 0;
     display: flex;
     justify-content: flex-start;
   }
@@ -49,6 +50,17 @@
   &__thumbs-inner {
     width: 520px;
     margin-left: 20px;
+  }
+
+  @media (max-width: (1280px)) {
+    &__madia {
+      flex-basis: auto;
+      flex-shrink: inherit;
+    }
+    &__thumbs-inner {
+      width: auto;
+      margin-right: 20px;
+    }
   }
 
   @media (max-width: ($screen-xl - 1)) {
@@ -64,7 +76,8 @@
       @include container;
     }
     .top-form {
-      margin: 40px 0;
+      margin: 40px auto;
+      max-width: 400px;
     }
     .top-form__title {
       font-size: 24px;
